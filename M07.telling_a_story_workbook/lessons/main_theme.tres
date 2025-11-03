@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=5 format=3 uid="uid://drays61pfu7xc"]
 
-[ext_resource type="StyleBox" uid="uid://qcs8vwooi2kr" path="res://button_black.tres" id="1_ei3wx"]
+[ext_resource type="StyleBox" uid="uid://qcs8vwooi2kr" path="res://lessons/button_black.tres" id="1_ei3wx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aaryr"]
 bg_color = Color(0, 0, 0, 1)
