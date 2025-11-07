@@ -12,3 +12,5 @@ res://button_black.tres
 res://dialouge.gd
 res://lessons/expressions.tscn
 res://lessons/expressions.gd
+res://lessons/dialogue.tscn
+res://lessons/dialouge.gd
