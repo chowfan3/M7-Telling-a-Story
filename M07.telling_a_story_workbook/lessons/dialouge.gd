@@ -24,17 +24,17 @@ var dialogue_items:Array[Dictionary] = [
 	
 	{
 		"expression": expressions["happy"],
-		"text":"Howdy y'all, I'm Sophia",
+		"text":"Howdy y'all, I'm [wave]Sophia[/wave]",
 		"character": bodies["sophia"]
 		},
 	{
 		"expression": expressions["regular"],
-		"text":"Today, I did nothing!",
+		"text":"Today, I did [rainbow]nothing[/rainbow]!",
 		"character": bodies["pink"]
 		},
 	
 	{	"expression": expressions["sad"],
-		"text":"I'm unemployed", 
+		"text":"I'm [shake]unemployed[/shake]", 
 		"character": bodies["pink"]}
 	]
 	

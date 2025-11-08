@@ -79,7 +79,7 @@ offset_left = 95.0
 offset_top = 552.0
 offset_right = -424.0
 offset_bottom = -416.16003
-text = "Hello"
+bbcode_enabled = true
 fit_content = true
 scroll_active = false
 
