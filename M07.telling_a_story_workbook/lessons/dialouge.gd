@@ -13,7 +13,11 @@ var expressions:= {
 	
 	
 }
-	
+
+var bodies := {
+	"sophia": preload("res://assets/sophia.png"),
+	"pink": preload("res://assets/pink.png")
+}
 
 
 var dialogue_items:Array[Dictionary] = [
@@ -21,14 +25,17 @@ var dialogue_items:Array[Dictionary] = [
 	{
 		"expression": expressions["happy"],
 		"text":"Howdy y'all, I'm Sophia",
+		"character": bodies["sophia"]
 		},
 	{
 		"expression": expressions["regular"],
 		"text":"Today, I did nothing!",
+		"character": bodies["pink"]
 		},
 	
 	{	"expression": expressions["sad"],
-		"text":"I'm unemployed", }
+		"text":"I'm unemployed", 
+		"character": bodies["pink"]}
 	]
 	
 var current_item_index := 0	
@@ -42,7 +49,7 @@ func show_text() -> void:
 	rich_text_label.visible_ratio = 0.0
 	
 	var tween := create_tween()
-	var text_appearing_duration := 2
+	var text_appearing_duration: float = current_item["text"].length() / 30.0
 	tween.tween_property	(rich_text_label, "visible_ratio", 1.0, text_appearing_duration)
 	
 	var sound_max_offset := audio_stream_player.stream.get_length() - text_appearing_duration
@@ -51,6 +58,10 @@ func show_text() -> void:
 	tween.finished.connect(audio_stream_player.stop)
 	
 	slide_in()
+	
+	body.texture = current_item["character"]
+	
+	
 	
 func advance() -> void:
 	current_item_index +=1 
